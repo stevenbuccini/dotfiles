@@ -2,12 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/stevenbuccini/.oh-my-zsh
+export ZSH=/Users/steven/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+DEFAULT_USER="steven"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,17 +85,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Prevent it from showing as user@hostname
-DEFAULT_USER="Steven"
+alias hidedesktop="defaults write com.apple.finder CreateDesktop false; killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop true; killall Finder"
+alias cat="bat"
+alias ping="~/.prettyping --nolegend"
+alias top="sudo htop"
 
 # For vi-mode plugin, reduce delay for entering vim mode
 KEYTIMEOUT=1
 # Bind backwards search to ctrl+r
-bindkey ‘^R’ history-incremental-search-backward
- 
+#bindkey ‘^R’ history-incremental-search-backward
+
 
 # Enable Syntax highlighting, must be last line in the file
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/usr/local/sbin:$PATH"
-
 export NODE_PATH=/usr/local/lib/node_modules
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
