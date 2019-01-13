@@ -90,6 +90,8 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop true; killall F
 alias cat="bat"
 alias ping="~/.prettyping --nolegend"
 alias top="sudo htop"
+alias ls="ls -1ap"
+
 
 # For vi-mode plugin, reduce delay for entering vim mode
 KEYTIMEOUT=1
