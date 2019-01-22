@@ -2,7 +2,7 @@
 
 
 ## fonts
-In editors, current favorite is [Fira Code](https://github.com/tonsky/FiraCode) which supports some awesome font ligatures.
+In editors, current favorite is [Fira Code](https://github.com/tonsky/FiraCode) which supports some awesome font ligatures. Also have used Meslo in the past. Want to evaluate pragmata pro, but is too expensive. Make sure to get fonts patched for Powerline. Use [this](http://app.programmingfonts.org/) to evaluate new fonts.
 
 ## Terminal 
 [This](https://gist.github.com/kevin-smets/8568070) is pretty close to how I've set up my current bash set up, except I use Fira Code here as well. I also tend to crank up the brightness of the colors (especially green, #228b22, and yellow, #ffc72c) Additionally, I needed to manually set the "bright" colors in iTerm2, or else they just show the super saturated colors.
